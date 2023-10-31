@@ -1,0 +1,13 @@
+body{
+    background-color: cornflowerblue;
+}
+h1{
+    color: burlywood;
+    text-align: center;
+    border-color: chartreuse;
+}
+p{
+    color: coral;
+    text-align: left;
+    border-color: aqua;
+}
