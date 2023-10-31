@@ -4,10 +4,16 @@ body{
 h1{
     color: burlywood;
     text-align: center;
+    border: 6px solid;
     border-color: chartreuse;
+    font-size: large;
+    padding: 30px;
 }
 p{
     color: coral;
-    text-align: left;
+    text-align: center;
+    border: 10px solid;
     border-color: aqua;
+    font-size: 40px;
+    margin: 100px;
 }
