@@ -17,3 +17,18 @@ p{
     font-size: 40px;
     margin: 100px;
 }
+a:link{
+    color: greenyellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color: aquamarine;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color: floralwhite;
+    background-color: transparent;
+    text-decoration: none;
+}
