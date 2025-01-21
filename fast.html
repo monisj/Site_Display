@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Fast-Bot</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,6 +12,27 @@
             background-color: #121212;
             color: #e0e0e0;
             overflow-x: hidden;
+        }
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #1f1f1f;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            font-size: 1rem;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        .back-button:hover {
+            transform: scale(1.05);
+            background-color: #383838;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
         }
         nav {
             text-align: center;
@@ -84,12 +105,12 @@
             margin-bottom: 15px;
         }
         a {
-            color: inherit; /* Inherit text color from the surrounding elements */
-            text-decoration: underline; /* Make the text underlined */
+            color: inherit;
+            text-decoration: underline;
         }
 
         a:hover {
-            color: #007BFF; /* Set hover color (optional) */
+            color: #007BFF;
         }
         h2 {
             text-align: center;
@@ -104,23 +125,6 @@
         footer img {
             width: 100px;
             height: auto;
-        }
-        #toTop {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            padding: 10px 15px;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s;
-        }
-        #toTop:hover {
-            background-color: #81C784;
         }
         @keyframes fadeIn {
             from {
@@ -138,12 +142,12 @@
     </style>
 </head>
 <body>
-    
+    <a href="index.html" class="back-button">← Back</a>
 
     <div class="container fade-in" id="about">
         <div class="profile">
-            <img src="S1.jpg" alt="Profile Picture">
-            <h2>Hi 👋, I'm Monis</h2>
+            <img src="P1.png" alt="Profile Picture">
+            <h2>Pakistan Sign Language Avatar</h2>
             <p>🌟 I'm currently working on Ensemble Learning and Image Recognition</p>
             <p>🌱 I'm currently learning OpenCV</p>
             <p>💬 Ask me about Python/C/C++</p>
@@ -151,48 +155,8 @@
         </div>
     </div>
 
-    <div class="container fade-in" id="about">
-        <h2>Notable Projects</h2>
-        <div class="tile">
-           
-            <div><a href="psl.html" ><img src="P1.png" alt="P1 Logo"><span></span></a></div>
-            <div><a href="fast.html" ><img src="https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png" alt="P2 Logo"><span></span></a></div>
-            <div><a href="acv.html" ><img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt= "P3 Logo"><span></span></a></div>
-            
-              </div>
-    </div>
-
-    <div class="container fade-in" id="contact">
-        <h2>Contact</h2>
-        
-        <div class="tile">
-            <div><a href="https://www.linkedin.com/in/monis-jawed-b665181aa/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo"><span></span></a></div>
-            <div><a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook Logo"><span></span></a></div>
-            <div><a href="https://www.instagram.com/monis__j/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Logo"><span></span></a></div>
-            <div><a href="https://github.com/monisj" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub Logo"><span></span></a></div>
-        </div>
-    </div>
-
     <footer>
         <img src="https://media.giphy.com/media/sIIhZliB2McAo/giphy.gif" alt="Nyan Cat">
     </footer>
-
-    <button id="toTop" onclick="scrollToTop()">⬆</button>
-
-    <script>
-        const toTopButton = document.getElementById('toTop');
-
-        window.onscroll = function() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                toTopButton.style.display = "block";
-            } else {
-                toTopButton.style.display = "none";
-            }
-        };
-
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
 </body>
 </html>
