@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast-Bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #1f1f1f;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            font-size: 1rem;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        .back-button:hover {
+            transform: scale(1.05);
+            background-color: #383838;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #81C784;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #1f1f1f;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+        }
+        .tile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .tile div {
+            background: #2c2c2c;
+            flex: 1 1 calc(25% - 20px);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .tile div:hover {
+            transform: translateY(-10px);
+            background-color: #383838;
+        }
+        .tile div a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #e0e0e0;
+            font-size: 1rem;
+        }
+        .tile div img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #007BFF;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        footer img {
+            width: 100px;
+            height: auto;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back</a>
+
+    <div class="container fade-in" id="about">
+        <div class="profile">
+            <img src="P1.png" alt="Profile Picture">
+            <h2>Pakistan Sign Language Avatar</h2>
+            <p>🌟 I'm currently working on Ensemble Learning and Image Recognition</p>
+            <p>🌱 I'm currently learning OpenCV</p>
+            <p>💬 Ask me about Python/C/C++</p>
+            <p>📫 How to reach me: <a href="mailto:muhammad.monis@nu.edu.pk" onclick="navigator.clipboard.writeText('muhammad.monis@nu.edu.pk'); alert('Email address copied to clipboard!'); return false;" style="text-decoration: underline; color: inherit; transition: color 0.3s;">muhammad.monis@nu.edu.pk</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <img src="https://media.giphy.com/media/sIIhZliB2McAo/giphy.gif" alt="Nyan Cat">
+    </footer>
+</body>
+</html>
